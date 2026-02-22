@@ -1,42 +1,68 @@
-# sv
+# AA Meeting Topic Generator
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A beautiful, calming web app for generating AA meeting topics from conference-approved literature.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **100+ Curated Topics** covering:
+  - The 12 Steps
+  - The 12 Traditions
+  - The Promises
+  - Big Book themes
+  - Daily Reflection themes
+  - Common discussion topics
 
-```sh
-# create a new project
-npx sv create my-app
-```
+- **Smart Generation** - Won't repeat recent topics
+- **Favorites** - Save topics you love
+- **History** - See recently generated topics
+- **Sobriety Counter** - Shows days sober (personalized for Nick, June 3rd, 2023)
+- **Mobile Responsive** - Works on all devices
+- **Clean Design** - AA blue/gold/white color scheme
 
-To recreate this project with the same configuration:
+## Tech Stack
 
-```sh
-# recreate this project
-npx sv create --template minimal --types ts --install npm .
-```
+- SvelteKit
+- Tailwind CSS
+- TypeScript
 
-## Developing
+## Live Demo
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+**GitHub Pages:** https://learningeverythingfirsttime.github.io/aa-topic-generator/
 
-```sh
+## Development
+
+```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## Build
 
-To create a production version of your app:
-
-```sh
+```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## Deployment
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+The app is configured for Vercel deployment:
+
+```bash
+npm run build
+vercel --prod
+```
+
+## Topic Categories
+
+- **Steps** (12) - All 12 Steps with descriptions
+- **Traditions** (12) - All 12 Traditions
+- **Promises** (12) - The AA Promises
+- **Big Book** (11) - Key chapters and themes
+- **Discussion** (35) - Common meeting topics
+- **Daily Reflection** (12) - Monthly themes
+- **Program** (12) - Recovery program topics
+
+Total: 100+ conference-approved topics
+
+## License
+
+MIT
